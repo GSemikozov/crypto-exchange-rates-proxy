@@ -16,7 +16,7 @@ app.use(cors());
 // call the API
 app.get('/', (req, res) => {
   // no extra url needed!
-  axios.get('https://www.alternet.org/feeds/feed.rss')
+  axios.get('https://coin360.com/api/coins')
     .then(data => {
       // use CircularJSON because the response
       // has circular references in it
